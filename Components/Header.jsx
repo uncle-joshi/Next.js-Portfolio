@@ -25,12 +25,6 @@ const Header = () => {
         duration: 1,
         ease: 'power3.out',
       }, "-=0.5")
-      .from(buttonRef.current, {
-        opacity: 0,
-        scale: 0.8,
-        duration: 0.8,
-        ease: 'back.out(1.7)',
-      }, "-=0.5")
       .from(imageRef.current, {
         opacity: 0,
         x: 100,
@@ -39,7 +33,7 @@ const Header = () => {
       }, "-=0.8");
 
     // Typewriter Animation
-    const roles = ["Full Stack Developer", "UI/UX Designer", "Tech Enthusiast"];
+    const roles = ["Full Stack Developer", "UI/UX Designer", "App Developer "];
     let index = 0;
 
     const typeWriter = () => {
@@ -76,7 +70,7 @@ const Header = () => {
             Exploring the future, one byte at a time.
         </p>
         <div className="flex justify-center md:justify-start">
-          <button ref={buttonRef} className="mt-4 px-8 py-3 bg-indigo-500 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+          <button className="mt-4 px-8 py-3 bg-indigo-500 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
             Join Us
           </button>
         </div>
