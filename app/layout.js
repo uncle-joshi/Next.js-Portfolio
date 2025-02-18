@@ -1,5 +1,6 @@
 import Navbar from "@/Components/Navbar";
 import "./globals.css";
+import Footer from "@/Components/Footer";
 
 export const metadata = {
   title: "CODE WITH UNCLE-JOSHI",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
